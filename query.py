@@ -10,7 +10,7 @@ def process_query(query_string):
     openai_api_key = 'api-key'
 
     # 创建OpenAI实例
-    openai = OpenAI(openai_api_key='api-key', temperature=0)
+    openai = OpenAI(openai_api_key=openai_api_key, temperature=0)
 
     # 创建SQLDatabaseChain实例
     db_chain = SQLDatabaseChain(llm=openai, database=db, verbose=True)
