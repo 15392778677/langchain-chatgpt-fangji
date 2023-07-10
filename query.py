@@ -7,10 +7,10 @@ def process_query(query_string):
     db = SQLDatabase.from_uri("mysql+pymysql://root:rootroot@localhost:3306/fang")
 
     # 指定OpenAI API密钥
-    openai_api_key = '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'
+    openai_api_key = 'api-key'
 
     # 创建OpenAI实例
-    openai = OpenAI(openai_api_key='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', temperature=0)
+    openai = OpenAI(openai_api_key='api-key', temperature=0)
 
     # 创建SQLDatabaseChain实例
     db_chain = SQLDatabaseChain(llm=openai, database=db, verbose=True)

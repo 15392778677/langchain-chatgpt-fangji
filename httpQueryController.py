@@ -7,7 +7,7 @@ import pymysql
 app = Flask(__name__)
 
 # Specify OpenAI API key
-openai_api_key = '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'
+openai_api_key = 'api-key'
 
 # Create OpenAI instance
 openai = OpenAI(openai_api_key=openai_api_key, temperature=0)
